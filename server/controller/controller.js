@@ -28,6 +28,9 @@ exports.login = async(req,res)=>{
 db.crud.find({email:email})
 .then((result)=>{
     console.log('result: ', result);
+}).catch((err)=>{
+    console.log('err: ', err);
+
 })
 
 
